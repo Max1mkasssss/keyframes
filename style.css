@@ -1,0 +1,81 @@
+@keyframes light {
+    0% {
+        box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua;
+    }
+    20%{ 
+        box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 15px yellow;
+    }
+    40%{ 
+        box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 15px blue;
+    }
+    60%{ 
+        box-shadow: 0 0 5px green, 0 0 10px green, 0 0 15px green;
+    }
+    80%{ 
+        box-shadow: 0 0 5px darkcyan, 0 0 10px darkcyan, 0 0 15px darkcyan;
+    }
+    100%{
+        box-shadow: 0 0 5px aqua, 0 0 10px aqua, 0 0 15px aqua;
+    }
+}
+@keyframes SlideUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: black;
+}
+.wrapper {
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button, .password{ 
+    border: none;
+    border-radius: 50px;
+    height: 30px;
+    width: 300px;
+    background-color: black;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    animation: light 5s infinite; 
+}
+.label {
+    border-radius: 50px;
+    box-shadow: 0 0 5px white;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    padding-top: 50px;
+}
+h2{ 
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 5px;
+    text-align: center;
+    animation: SlideUp 5s 3s infinite;
+}
